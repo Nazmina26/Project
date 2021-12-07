@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="images/1200px-Logo_of_Kaspi_bank.png" type="image/png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Shop</title>
+   </head>
+   <body>
+      <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+      <header class="masthead">
+         <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="shop.html">Shop</a>
+            <a href="#">Contact</a>
+            <div class="topnav-right">
+               <a href="login.html">Log in</a>
+               <a href="registration.html">Registration</a>
+            </div>
+         </div>
+      </header>
+      <form>
+         <input type="text" name="search" placeholder="Search..">
+      </form>
+      <img src="magaz.jpg" alt="magazin">
+      <div class="container">
+         <h1>You can add/delete and make change in your choice</h1>
+         <hr>
+         <form onsubmit="event.preventDefault();OFS();" autocomplete="off">
+            <div>
+               <label>Name of Item</label> <br>
+               <label class="validation-error hide" id="ItemNameValidationError">This field is required</label>
+               <input type="text" name="Item" id="Item">
+            </div>
+            <div>
+               <label>Name of Author</label>
+               <input type="text" name="author" id="author">
+            </div>
+            <div>
+               <label>Price</label>
+               <input type="text" name="price" id="price">
+            </div>
+            <div  class="form-action-buttons">
+               <input type="submit" value="Submit">
+            </div>
+         </form>
+         <br/>
+         <table class="list" id="empList">
+            <thead>
+               <tr>
+                  <th>Name of Item</th>
+                  <th>Your city</th>
+                  <th>Price</th>
+                  <th>Actions</th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+         </table>
+      </div>
+      <footer class="colophon grid">
+         <h2>Follow us in:</h2>
+         <a class="fa fa-facebook" href="https://www.facebook.com/Kaspi.kz"></a>
+         <a class="fa fa-vk" href="https://vk.com/kaspikz"></a>
+         <a class="fa fa-twitter" href="https://twitter.com/Kaspi_kz"></a>
+         <a class="fa fa-instagram" href="https://www.instagram.com/kaspi.kz/"></a>
+         <a class="fa fa-odnoklassniki" href="https://ok.ru/kaspi.kz"></a>
+         <a class="fa fa-youtube" href="https://www.youtube.com/c/kaspikz"></a>
+         <a class="fa fa-telegram" href="https://t.me/kaspikz"></a>
+         <hr>
+         <aside>
+            HTML/CSS was done by: <a href="#">Kirgizbayev Iskander</a> & <a href="#">Kazenov Kaysar</a>
+            <p>JS/JQuery was done by: <a href="#">Shanazarova Nazmina</a> & <a href="#">Kazenov Kaysar</a></p>
+            <p>From: <a><i> "IT1-2017" Group</i></a></p>
+            <small>©2021-2022 All rights reserved</small>
+         </aside>
+      </footer>
+      <script src="script.js"></script>
+   </body>
+</html>
